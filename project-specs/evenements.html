@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <title>L'Arôme Magique - Evenements</title>
+    </head>
+    <style>
+        /* Styles généraux */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        /* Afficher les sous-menus au survol */
+        header nav ul li:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+    <script>
+        // JavaScript pour gérer la redirection du lien principal "À Propos"
+        function redirectToAbout() {
+            window.location.href = "a_propos.html";
+        }
+        // JavaScript pour gérer la redirection du lien principal "La carte"
+        function redirectToAbout2() {
+            window.location.href = "carte.html";
+        }
+    </script>
+    <body>
+        
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="accueil.html">L'Arôme Magique</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="accueil.html">Accueil</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="redirectToAbout()">
+                                    À Propos
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="histoire.html">Histoire</a>
+                                    <a class="dropdown-item" href="equipe.html">Notre Équipe</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="carte.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="redirectToAbout2()">
+                                    La carte
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="carte.html#boisson_chaude">Boissons Chaudes</a>
+                                    <a class="dropdown-item" href="carte.html#boisson_froide">Boissons Froides</a>
+                                    <a class="dropdown-item" href="carte.html#friandise">Friandises</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="evenements.html">Événements</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="actualites.html">Actualités</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="container mt-5">
+            <section class="evenement-section">
+                <h1 class="display-4">Événements Magiques</h1>
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="evenement-item">
+                            <img src="./images/evenements/evenement1.png" alt="Événement 1" class="img-fluid rounded">
+                            <div class="evenement-content">
+                                <h2>Soirée Café & Musique Live</h2>
+                                <p>Date : 15 Octobre 2023</p>
+                                <p>Heure : 19h00 - 22h00</p>
+                                <p>Rejoignez-nous pour une soirée spéciale de café délicieux et de musique en direct. Profitez de notre sélection de boissons caféinées tout en écoutant des artistes talentueux.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <div class="evenement-item">
+                            <div class="evenement-content">
+                                <h2>Atelier Latte Art</h2>
+                                <p>Date : 25 Novembre 2023</p>
+                                <p>Heure : 14h00 - 16h00</p>
+                                <p>Apprenez l'art de créer de magnifiques motifs de latte avec nos baristas experts. Un atelier amusant et éducatif pour les amateurs de café.</p>
+                            </div>
+                            <img src="./images/evenements/evenement2.png" alt="Événement 2" class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        
+        
+        
+        
+
+        <footer class="bg-dark text-white text-center py-4 mt-5">
+            <div class="container">
+                <p>Contactez les Sorciers du Café</p>
+                <p>Nous sommes toujours ravis d'entendre vos messages, que ce soit une question, un compliment ou une suggestion. Envoyez-nous un hibou postal magique via le formulaire ci-dessous, ou faites-nous un signe par téléphone ou en vous rendant dans notre sanctuaire caféiné.</p>
+                <a href="contact.html" class="btn btn-primary">Formulaire de Contact</a>
+            </div>
+        </footer>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
